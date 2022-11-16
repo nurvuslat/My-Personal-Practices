@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-03 03:32:39 &#214;S"/>
+        <attribute name="created" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAzOjI3OjMxIMOWUzsyNzY1"/>
+        <attribute name="edited" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAzOjMyOjM5IMOWUzsxOzI4Nzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final, ortalama" type="Real" array="False" size=""/>
+            <output expression="&quot;Vize Notunuzu Giriniz: &quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;Final Notunuzu giriniz: &quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="ortalama" expression="vize * 30/100 + final * 70/100"/>
+            <if expression="ortalama &gt; 50 &amp;&amp; final &gt; 50">
+                <then>
+                    <output expression="&quot;Ge&#231;ti&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Kald&#305;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-03 01:28:43 &#214;S"/>
+        <attribute name="created" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAxOjE0OjQ5IMOWUzsyNzY4"/>
+        <attribute name="edited" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAxOjI4OjQzIMOWUzsxOzI4NzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="k&#305;saKenar, uzunKenar, cevre, alan" type="Integer" array="False" size=""/>
+            <output expression="&quot;K&#305;sa Kenar Uzunlu&#287;unu Giriniz&quot;" newline="True"/>
+            <input variable="k&#305;saKenar"/>
+            <output expression="&quot;Uzun Kenar Uzunlu&#287;unu Giriniz&quot;" newline="True"/>
+            <input variable="uzunKenar"/>
+            <assign variable="cevre" expression="2 * (k&#305;saKenar + uzunKenar)"/>
+            <assign variable="alan" expression="k&#305;saKenar*uzunKenar"/>
+            <output expression="&quot;Alan: &quot; &amp; alan" newline="True"/>
+            <output expression="&quot;&#199;evre: &quot; &amp; cevre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

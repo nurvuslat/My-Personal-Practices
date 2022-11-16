@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-04 02:08:47 &#214;S"/>
+        <attribute name="created" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTA0OzAxOjU4OjM3IMOWUzsyNzc0"/>
+        <attribute name="edited" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTA0OzAyOjA4OjQ3IMOWUzsxOzI4Nzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, delta, x1, x2" type="Real" array="False" size=""/>
+            <output expression="&quot;A Say&#305;s&#305;n&#305; Giriniz: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;B Say&#305;s&#305;n&#305; Giriniz: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;C Say&#305;s&#305;n&#305; Giriniz: &quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="(b * b) / -(4 * a * c)"/>
+            <if expression="delta &lt; 0">
+                <then>
+                    <output expression="&quot;&#199;&#246;z&#252;m K&#252;mesi Bulunamaz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="delta &gt; 0">
+                        <then>
+                            <assign variable="x1" expression="(-b -(delta ^ (1/2))) / (2 * a)"/>
+                            <assign variable="x2" expression="(-b +(delta ^ (1/2))) / (2 * a)"/>
+                            <output expression="&quot;x1 = &quot; &amp; x1 &amp; &quot; x2 = &quot; &amp; x2" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="delta = 0">
+                                <then>
+                                    <assign variable="x1" expression="-b / (2 * a)"/>
+                                    <output expression="&quot;x1 = x2 = &quot; &amp; x1" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

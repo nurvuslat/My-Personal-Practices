@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-07 12:58:29 &#214;&#214;"/>
+        <attribute name="created" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTA3OzEyOjU0OjAzIMOWw5Y7Mjg5OQ=="/>
+        <attribute name="edited" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTA3OzEyOjU4OjI5IMOWw5Y7MTszMDE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, sayac, toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="sayac" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Bir Say&#305; Giriniz: &quot;" newline="True"/>
+                <input variable="say&#305;"/>
+                <if expression="say&#305; % 2 == 0">
+                    <then>
+                        <assign variable="toplam" expression="toplam + say&#305;"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Girdi&#287;iniz Say&#305;lar&#305;n Toplam&#305;: &quot; &amp; toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

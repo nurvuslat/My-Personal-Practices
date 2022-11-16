@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-03 03:12:11 &#214;S"/>
+        <attribute name="created" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAzOjA3OjM2IMOWUzsyNzY4"/>
+        <attribute name="edited" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAzOjEyOjExIMOWUzsxOzI4NjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Real" array="False" size=""/>
+            <output expression="&quot;X De&#287;erini Giriniz: &quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x &lt; 1">
+                <then>
+                    <assign variable="y" expression="3 * x - 4"/>
+                </then>
+                <else>
+                    <if expression="x &gt;= 1 &amp;&amp; x &lt;= 10">
+                        <then>
+                            <assign variable="y" expression="x + 2"/>
+                        </then>
+                        <else>
+                            <if expression="x &gt; 10">
+                                <then>
+                                    <assign variable="y" expression="2 * x + 4"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Y De&#287;eri: &quot; &amp; y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

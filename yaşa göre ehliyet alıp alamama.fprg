@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-03 02:46:08 &#214;S"/>
+        <attribute name="created" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAyOjM3OjM2IMOWUzsyNzcw"/>
+        <attribute name="edited" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAyOjQ2OjA4IMOWUzszOzI4Nzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ya&#351;" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ya&#351;&#305;n&#305;z&#305; Giriniz: &quot;" newline="True"/>
+            <input variable="ya&#351;"/>
+            <if expression="ya&#351;&gt;=18">
+                <then>
+                    <output expression="&quot;Ehliyet Alabilirsiniz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ehliyet Alamazs&#305;n&#305;z&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

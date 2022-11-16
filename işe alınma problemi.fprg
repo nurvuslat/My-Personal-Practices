@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-03 03:00:16 &#214;S"/>
+        <attribute name="created" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAyOjUzOjE3IMOWUzsyNzY3"/>
+        <attribute name="edited" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAzOjAwOjE2IMOWUzsxOzI4Njc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="yas" type="Integer" array="False" size=""/>
+            <declare name="s&#252;r&#252;c&#252;Belgesi, universiteMezunu" type="String" array="False" size=""/>
+            <output expression="&quot;Ya&#351;&#305;n&#305;z&#305; Giriniz: &quot;" newline="True"/>
+            <input variable="yas"/>
+            <if expression="yas &gt; 40">
+                <then>
+                    <output expression="&quot;&#220;zg&#252;n&#252;z, &#304;&#351;e Al&#305;nmad&#305;n&#305;z&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#220;niversite Mezunu Musunuz? E/H &quot;" newline="True"/>
+                    <input variable="universiteMezunu"/>
+                    <output expression="&quot;S&#252;r&#252;c&#252; Belgeniz Var M&#305;?&quot;" newline="True"/>
+                    <input variable="s&#252;r&#252;c&#252;Belgesi"/>
+                    <if expression="s&#252;r&#252;c&#252;Belgesi == &quot;E&quot; &amp;&amp; universiteMezunu == &quot;E&quot;">
+                        <then>
+                            <output expression="&quot;Tebrikler, &#304;&#351;e Al&#305;nd&#305;n&#305;z&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#220;zg&#252;n&#252;z, &#304;&#351;e Al&#305;nmad&#305;n&#305;z&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

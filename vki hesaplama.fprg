@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-03 03:25:06 &#214;S"/>
+        <attribute name="created" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAzOjE2OjQ2IMOWUzsyNzY5"/>
+        <attribute name="edited" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAzOjI1OjA2IMOWUzsyOzI4NzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="boy, kilo, vki" type="Real" array="False" size=""/>
+            <output expression="&quot;Boyunuzu Metre Cinsinden Giriniz: &quot;" newline="True"/>
+            <input variable="boy"/>
+            <output expression="&quot;Kilonuzu Kilogram Cinsinden Giriniz: &quot;" newline="True"/>
+            <input variable="kilo"/>
+            <assign variable="vki" expression="kilo / (boy * boy)"/>
+            <if expression="vki &lt; 18.5">
+                <then>
+                    <output expression="&quot;Zay&#305;f&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="vki &gt;= 18.5 &amp;&amp; vki &lt;= 24.9">
+                        <then>
+                            <output expression="&quot;Sa&#287;l&#305;kl&#305;&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="vki &gt;=25 &amp;&amp; vki &lt;= 29.9">
+                                <then>
+                                    <output expression="&quot;Fazla Kilolu&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="vki &gt;=30 &amp;&amp; vki &lt;= 34.9">
+                                        <then>
+                                            <output expression="&quot;1. Derece Obezite&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="vki &gt;= 35 &amp;&amp; vki&lt;= 39.9">
+                                                <then>
+                                                    <output expression="&quot;2. Derece Obezite&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="vki &gt;=40">
+                                                        <then>
+                                                            <output expression="&quot;3. Derece Obezite&quot;" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

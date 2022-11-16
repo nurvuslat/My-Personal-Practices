@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-02 03:32:10 &#214;S"/>
+        <attribute name="created" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTExLTAyOzAzOjA2OjIzIMOWUzsyNzU2"/>
+        <attribute name="edited" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTExLTAyOzAzOjMyOjEwIMOWUzsxOzI4NTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kare, sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <while expression="sayac &lt; 10">
+                <assign variable="sayac" expression="sayac + 1"/>
+                <assign variable="kare" expression="sayac * sayac"/>
+                <output expression="kare" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

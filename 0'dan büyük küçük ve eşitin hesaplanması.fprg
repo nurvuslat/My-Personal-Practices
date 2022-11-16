@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-03 02:45:12 &#214;S"/>
+        <attribute name="created" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAyOjQwOjU5IMOWUzsyNzY5"/>
+        <attribute name="edited" value="TnVyO0RFU0tUT1AtRTU4OElBVDsyMDIyLTA4LTAzOzAyOjQ1OjEyIMOWUzsxOzI4NzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;" type="Integer" array="False" size=""/>
+            <output expression="&quot;Say&#305;y&#305; Giriniz: &quot;" newline="True"/>
+            <input variable="say&#305;"/>
+            <if expression="say&#305;=0">
+                <then>
+                    <output expression="&quot;Say&#305; S&#305;f&#305;rd&#305;r &quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="say&#305;&gt;0">
+                <then>
+                    <output expression="&quot;Say&#305; Pozitiftir &quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="say&#305;&lt;0">
+                <then>
+                    <output expression="&quot;Say&#305; Negatiftir &quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
